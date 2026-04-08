@@ -1,15 +1,18 @@
 {
   "name": "mwah-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Temporal order workflow demo for Michelle With A Heart",
+  "main": "dist/client.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "worker": "ts-node src/worker.ts",
+    "start": "ts-node src/client.ts",
+    "start:fail": "ts-node src/client.ts --fail",
+    "start:transient": "ts-node src/client.ts --transient"
   },
   "keywords": [],
-  "author": "",
+  "author": "Michelle Roberts",
   "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
     "@temporalio/activity": "^1.15.0",
     "@temporalio/client": "^1.15.0",
@@ -17,7 +20,10 @@
     "@temporalio/workflow": "^1.15.0",
     "axios": "^1.14.0",
     "dotenv": "^17.4.1",
-    "ts-node": "^10.9.2",
     "typescript": "^6.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "ts-node": "^10.9.2"
   }
 }
