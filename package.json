@@ -1,0 +1,23 @@
+{
+  "name": "mwah-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@temporalio/activity": "^1.15.0",
+    "@temporalio/client": "^1.15.0",
+    "@temporalio/worker": "^1.15.0",
+    "@temporalio/workflow": "^1.15.0",
+    "axios": "^1.14.0",
+    "dotenv": "^17.4.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.2"
+  }
+}
